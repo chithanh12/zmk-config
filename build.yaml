@@ -13,10 +13,6 @@
 #
 ---
 include:
-  - board: nice_nano_v2
-    shield: corne_left
-  - board: nice_nano_v2
-    shield: corne_right
   - board: nrfmicro_13
     shield: miniris_left
   - board: nrfmicro_13
