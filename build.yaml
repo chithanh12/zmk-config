@@ -26,5 +26,8 @@ include:
   - board: nice_nano_v2
     shield: miniris_right
   - board: nice_nano_v2
+    shield: minidactyl_left
+  - board: nice_nano_v2
+    shield: minidactyl_right
+  - board: nice_nano_v2
     shield: settings_reset
-  

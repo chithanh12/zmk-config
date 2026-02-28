@@ -1,0 +1,202 @@
+/ {
+
+    behaviors {
+
+        hm_l: homerow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick_tap_ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <
+                                        6   7   8   9  10  11
+                                        18  19  20  21  22  23
+                                        30  31  32  33  34  35
+                        36  37  38      39  40  41
+            >;
+        };
+
+        hm_r: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RIGHT";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick_tap_ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <
+             0   1   2   3   4   5
+            12  13  14  15  16  17
+            24  25  26  27  28  29  
+                        36  37  38       39  40  41
+            >;
+        };
+
+        hm_retro_l: homerow_mods_retro_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RETRO_LEFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick_tap_ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            retro-tap;
+            hold-trigger-key-positions = <
+                                        6   7   8   9  10  11
+                                       18  19  20  21  22  23
+                                       30  31  32  33  34  35
+                        36  37  38     39  40  41
+            >;
+        };
+
+        hm_retro_r: homerow_mods_retro_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RETRO_RIGHT";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick_tap_ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            retro-tap;
+            hold-trigger-key-positions = <
+            0   1   2   3   4   5
+            12  13  14  15  16  17
+            24  25  26  27  28  29  
+                        36  37  38       39  40  41
+            >;
+        };
+
+        hm_retro_slow_l: homerow_mods_retro_slow_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RETRO_SLOW_LEFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS_SLOW>;
+            quick_tap_ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            retro-tap;
+            hold-trigger-key-positions = <
+                                            6   7   8   9  10  11
+                                            18  19  20  21  22  23
+                                            30  31  32  33  34  35
+                        36  37  38          39  40  41
+            >;
+        };
+
+        hm_retro_slow_r: homerow_mods_retro_slow_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RETRO_SLOW_RIGHT";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS_SLOW>;
+            quick_tap_ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            retro-tap;
+            hold-trigger-key-positions = <
+            0   1   2   3   4   5
+            12  13  14  15  16  17
+            24  25  26  27  28  29  
+                        36  37  38       39  40  41
+            >;
+        };
+
+        hm_fast_l: homerow_mods_fast_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_FAST_LEFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS_FAST>;
+            quick_tap_ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <
+                                            6   7   8   9  10  11
+                                            18  19  20  21  22  23
+                                            30  31  32  33  34  35
+                        36  37  38          39  40  41
+            >;
+        };
+
+        hm_fast_r: homerow_mods_fast_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_FAST_RIGHT";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS_FAST>;
+            quick_tap_ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <
+            0   1   2   3   4   5
+            12  13  14  15  16  17
+            24  25  26  27  28  29  
+                        36  37  38       39  40  41
+            >;
+        };
+
+        hl_fast_l: homerow_layers_fast_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_LAYERS_FAST_LEFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS_FAST>;
+            quick_tap_ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <
+                                            6   7   8   9  10  11
+                                            18  19  20  21  22  23
+                                            30  31  32  33  34  35
+                        36  37  38          39  40  41
+            >;
+        };
+
+        hl_fast_r: homerow_layers_fast_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_LAYERS_FAST_RIGHT";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS_FAST>;
+            quick_tap_ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <
+            0   1   2   3   4   5
+            12  13  14  15  16  17
+            24  25  26  27  28  29  
+                        36  37  38       39  40  41
+            >;
+        };
+
+        hl_l: homerow_layers_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_LAYERS_LEFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick_tap_ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <
+                                            6   7   8   9  10  11
+                                            18  19  20  21  22  23
+                                            30  31  32  33  34  35
+                        36  37  38          39  40  41
+            >;
+        };
+
+        hl_r: homerow_layers_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_LAYERS_RIGHT";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick_tap_ms = <TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <
+            0   1   2   3   4   5
+            12  13  14  15  16  17
+            24  25  26  27  28  29  
+                        36  37  38       39  40  41
+            >;
+        };
+
+    };
+};
