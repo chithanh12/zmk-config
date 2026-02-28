@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: chithanh12
-      revision: main
+      revision: thxph
       import: app/west.yml
   self:
     path: config
