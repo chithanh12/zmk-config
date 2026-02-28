@@ -53,7 +53,7 @@ b1_layer { bindings = <
                                    &mo L2     &mo L1     ______               ______     &mo R1     &mo R2                                         >; };r1r2_layer { bindings = <
   btlder     ______     ______     ______     ______     ______               ______     ______     ______     ______     ______     btlder
   ______     ______     ______     ______     ______     ______               ______     ______     ______     ______     ______     ______
-  ______     ______     ______     ______     ______     ______               ______     ______     ______     ______     ______     ______
+  ______     ______     ______     ______     ______     &reset               &reset     ______     ______     ______     ______     ______
                                    &mo L2     &mo L1     ______               ______     &mo R1     &mo R2                                         >; };l1r1r2_layer { bindings = <
   xbt_n      rgb_tg     pwr_tg     ______     ______     ______               rgb_sv     pwr_on     rgb_bn     rgb_sn     rgb_hn     rgb_en
   xbt_p      df_b0      df_b1      ______     ______     ______               pwr_sv     pwr_off    rgb_bp     rgb_sp     rgb_hp     rgb_ep
